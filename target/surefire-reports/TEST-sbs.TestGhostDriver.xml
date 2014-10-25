@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="58.488" errors="1" skipped="0" tests="1" name="sbs.TestGhostDriver">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"/>
+    <property name="java.vm.version" value="23.5-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="TestGhostDriver"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/thanos/source/SportsBookScraper"/>
+    <property name="java.runtime.version" value="1.7.0_09-b05"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/opt/java/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.16.3-1-ARCH"/>
+    <property name="user.home" value="/home/thanos"/>
+    <property name="user.timezone" value="Europe/Athens"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="thanos"/>
+    <property name="java.class.path" value="/opt/maven/boot/plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/opt/java/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=TestGhostDriver"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_09"/>
+    <property name="java.ext.dirs" value="/opt/java/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/lib/jfr.jar:/opt/java/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="58.488" classname="sbs.TestGhostDriver" name="testTheAlgo">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at sbs.TestGhostDriver.crawlHTMLAttributeValues(TestGhostDriver.java:123)
+	at sbs.TestGhostDriver.mainTestAlgo(TestGhostDriver.java:89)
+	at sbs.TestGhostDriver.testTheAlgo(TestGhostDriver.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>https://www.sportingbet.gr/stoixima.aspx
+name
+0
+Element name name: Ποδόσφαιρο
+Element name name: Μπάσκετ
+Element name name: Τένις
+Element name name: Βόλεϊ
+Element name name: Μπέιζμπολ
+Element name name: Ιπποδρομίες
+Element name name: Κρίκετ
+Element name name: Σνούκερ
+Element name name: AFL
+Element name name: Χόκεϊ επί πάγου
+Element name name: F1 και Ράλι
+Element name name: Χάντμπολ
+Element name name: Ειδικά στοιχήματα
+Element name name: Αμερικάνικο Ποδόσφαιρο
+Element name name: Ράγκμπι Union
+Element name name: Βελάκια
+Element name name: Γκολφ
+Element name name: Χειμερινά σπορ
+Element name name: Πολιτική
+Element name name: Ποδηλασία
+Element name name: Μποξ
+Element name name: Πόκερ
+Element name name: Κυνοδρομίες
+Element name name: Μικτές Πολεμικές Τέχνες
+Element name name: Virtual Football
+Element name name: Πολλαπλά
+url
+0
+Element name url: http://www.sportingbet.gr/sports-football/0-102.html
+Element name url: http://www.sportingbet.gr/sports-euro-basketball/0-190.html
+Element name url: http://www.sportingbet.gr/sports-tennis/0-8.html
+Element name url: http://www.sportingbet.gr/sports-%ce%92%cf%8c%ce%bb%ce%b5%cf%8a/0-177.html
+Element name url: http://www.sportingbet.gr/sports-baseball/0-9.html
+Element name url: http://www.sportingbet.gr/sports-horse-racing/0-2-171.html
+Element name url: http://www.sportingbet.gr/sports-cricket/0-33.html
+Element name url: http://www.sportingbet.gr/sports-%ce%a3%ce%bd%ce%bf%cf%8d%ce%ba%ce%b5%cf%81/0-5.html
+Element name url: http://www.sportingbet.gr/sports-afl/0-129.html
+Element name url: http://www.sportingbet.gr/sports-ice-hockey/0-11-210.html
+Element name url: http://www.sportingbet.gr/sports-formula-1/0-7-135.html
+Element name url: http://www.sportingbet.gr/sports-handball/0-175.html
+Element name url: http://www.sportingbet.gr/sports-specials/0--1.html
+Element name url: http://www.sportingbet.gr/sports-us-football/0-10.html
+Element name url: http://www.sportingbet.gr/sports-rugby-union/0-13.html
+Element name url: http://www.sportingbet.gr/sports-darts/0-107.html
+Element name url: http://www.sportingbet.gr/sports-golf/0-4.html
+Element name url: http://www.sportingbet.gr/sports-%ce%a7%ce%b5%ce%b9%ce%bc%ce%b5%cf%81%ce%b9%ce%bd%ce%ac-%cf%83%cf%80%ce%bf%cf%81/0-134.html
+Element name url: http://www.sportingbet.gr/sports-%ce%a0%ce%bf%ce%bb%ce%b9%cf%84%ce%b9%ce%ba%ce%ae/0-106.html
+Element name url: http://www.sportingbet.gr/sports-%ce%a0%ce%bf%ce%b4%ce%b7%ce%bb%ce%b1%cf%83%ce%af%ce%b1/0-3.html
+Element name url: http://www.sportingbet.gr/sports-boxing/0-1.html
+Element name url: http://www.sportingbet.gr/sports-poker/0-132.html
+Element name url: http://www.sportingbet.gr/sports-greyhounds/0-32.html
+Element name url: http://www.sportingbet.gr/sports-%ce%9c%ce%b9%ce%ba%cf%84%ce%ad%cf%82-%ce%a0%ce%bf%ce%bb%ce%b5%ce%bc%ce%b9%ce%ba%ce%ad%cf%82-%ce%a4%ce%ad%cf%87%ce%bd%ce%b5%cf%82/0-390.html
+Element name url: http://www.sportingbet.gr/sports-virtual-football/0-700.html
+Element name url: http://www.sportingbet.gr/sports-%ce%a0%ce%bf%ce%bb%ce%bb%ce%b1%cf%80%ce%bb%ce%ac/10.html
+Searching types into: http://www.sportingbet.gr/sports-football/0-102.html
+name
+0
+Element name name: Ζωντανό Στοίχημα Αγώνες - Κυριακή
+Element name name: Ζωντανό Στοίχημα Αγώνες - Δευτέρα
+Element name name: Ζωντανό Στοίχημα Αγώνες - Τρίτη
+Element name name: Ζωντανό Στοίχημα Αγώνες
+Element name name: Russia 2018 - Νικητής
+Element name name: Ελλάδα - Super League
+Element name name: Ελλάδα - Football League
+Element name name: Champions League - 2014/15 - Νικητής
+Element name name: Champions League - 2014/15 -Matches
+Element name name: Champions League - 2014/15 - Νικητής Ομίλου
+Element name name: Champions League - 2014/15 - Group To Qualify
+Element name name: Champions League -2014/15 - Κορυφαίος Σκόρερ
+Element name name: Champions League - 2014/15 - Group Straight Forecast
+Element name name: Champions League - 2014/15 - Group Dual Forecast
+Element name name: Champions League - 2014/15 - Φιναλίστ διοργάνωσης
+Element name name: Champions League - 2014/15 - Να φτάσει στον τελικό
+Element name name: Champions League - 2014/15 - Winning Nation
+Element name name: Europa League - 2014/15 - Νικητής
+Element name name: Europa League - 2014/15 -Matches
+Element name name: Europa League - 2014/15 - Νικητής Ομίλου
+Element name name: Europa League - 2014/15 - Group To Qualify
+Element name name: Αγγλία - Premier League
+Element name name: Αγγλία - Championship
+Element name name: Αγγλία - League One
+Element name name: Αγγλία - League Two
+Element name name: Αγγλία - Conference National
+Element name name: Γερμανία - Bundesliga
+Element name name: Γερμανία - 2η Κατηγορία
+Element name name: Αυστρία - Erste Liga
+Element name name: Ελβετία - 2η Κατηγορία
+Element name name: Ισπανία - Primera Division
+Element name name: Ισπανία - Segunda Division
+Element name name: Ισπανία - Segunda B
+Element name name: Γαλλία - Ligue 1
+Element name name: Γαλλία - Ligue 2
+Element name name: Ιταλία - Serie A
+Element name name: Ιταλία - Serie B
+Element name name: Ιταλία - Lega Pro
+Element name name: Τουρκία - Super Lig
+Element name name: Τουρκία - 2η Κατηγορία
+Element name name: Ρωσία - Premier Liga
+Element name name: Ουκρανία - Premier League
+Element name name: Πολωνία - 1η Κατηγορία
+Element name name: Βραζιλία - Serie A
+Element name name: Brazil - Serie C
+Element name name: Βέλγιο - Jupiler Pro League
+Element name name: Βέλγιο - 2η Κατηγορία
+Element name name: Κροατία - 1η Κατηγορία
+Element name name: Δανία - Superliga
+Element name name: Ουγγαρία - 1η Κατηγορία
+Element name name: Ισραήλ - Premier League
+Element name name: Ολλανδία - 2η Κατηγορία
+Element name name: Norway - Tippeligaen
+Element name name: Νορβηγία - 1η Κατηγορία
+Element name name: Πορτογαλία - Primeira Liga
+Element name name: Πορτογαλία - Κύπελλο
+Element name name: Σκωτία - League Two
+Element name name: Σκωτία - Championship
+Element name name: Σουηδία - Allsvenskan - Σουηδία
+Element name name: Σουηδία - Superettan - Σουηδία
+Element name name: Ρουμανία - 1η Κατηγορία
+Element name name: Αργεντινή - Primera Division
+Element name name: Αργεντινή - Primera B Nacional
+Element name name: Βολιβία - LPF
+Element name name: Χιλή - Primera Division
+Element name name: Χιλή - Primera B
+Element name name: Κολομβία - Primera A
+Element name name: Κολομβία - Primera B
+Element name name: Κόστα Ρίκα - Primera Division
+Element name name: Εκουαδόρ - Serie A
+Element name name: Γουατεμάλα - Liga Nacional
+Element name name: Ονδούρα - Liga Nacional
+Element name name: Μεξικό - Primera Division
+Element name name: Παραγουάη - Division Profesional
+Element name name: Περού - Primera Division
+Element name name: Ουρουγουάη - Primera Division
+Element name name: ΗΠΑ - MLS
+Element name name: Βενεζουέλα - Primera Division
+Element name name: Canada- Soccer League
+Element name name: Αυστραλία - 1η Κατηγορία
+Element name name: Αυστραλία - Κύπελλο
+Element name name: Μαρόκο - 1η Κατηγορία
+Element name name: Τζαμάικα - Premier League
+Element name name: Αίγυπτος - Premier League
+Element name name: UEFA Champions League - 2014/15 - Νικητής
+Element name name: AFC Champions League - 2014 - Νικητής
+Element name name: Βραζιλία - Copa do Brazil - 2014 - Νικητής
+Element name name: Κύπρος - 1η Κατηγορία - 2014/15 - Νικητής
+Element name name: Αγγλία - Premier League - 2014/15 - Νικητής
+Element name name: Αγγλία - Premier League 2014/15 - Κορυφαίες 4
+Element name name: Αγγλία - Premier League 2014/15 - Κορυφαίος Σκόρερ
+Element name name: Αγγλία - Premier League 2014/15 - Υποβιβασμός
+Element name name: Αγγλία - Κύπελλο FA - 2014/15 - Νικητής
+Element name name: Αγγλία - Championship - 2014/15 - Νικητής
+Element name name: Αγγλία - Championship - 2014/15 - Ανοδος
+Element name name: Αγγλία - Championship- 2014/15 - Υποβιβασμός
+Element name name: Αγγλία - League One - 2014/15 - Νικητής
+Element name name: Αγγλία - League One - 2014/15 - Ανοδος
+Element name name: Αγγλία - League Two - 2014/15 - Νικητής
+Element name name: Αγγλία - League Two - 2014/15 - Ανοδος
+Element name name: Αγγλία - League Two - 2014/15 - Υποβιβασμός
+Element name name: Αγγλία - League Cup - 2014/15 - Νικητής
+Element name name: Γερμανία - Κύπελλο - 2014/15 - Νικητής
+Element name name: Ιταλία - Κύπελλο - 2014/15 - Νικητής
+Element name name: Πορτογαλία - Primeira Liga 2013/14 - Νικητής
+Element name name: Σκωτία - Premiership - 2014/15 - Νικητής
+Element name name: Ισπανία - Κύπελλο - 2014/15 - Νικητής
+Element name name: UEFA Euro 2016 - Winner
+Element name name: UEFA Euro 2016 - To Qualify
+Element name name: UEFA Euro 2016 - Not to Qualify
+Element name name: UEFA Euro 2016 Qualifying - Νικητής Ομίλου
+url
+0
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae/1-102-574583.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%94%ce%b5%cf%85%cf%84%ce%ad%cf%81%ce%b1/1-102-574588.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%a4%cf%81%ce%af%cf%84%ce%b7/1-102-574908.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82/1-102-229132.html
+Element name url: http://www.sportingbet.gr/sports-football/russia-2018-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-810559.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%95%ce%bb%ce%bb%ce%ac%ce%b4%ce%b1-super-league/1-102-227225.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%95%ce%bb%ce%bb%ce%ac%ce%b4%ce%b1-football-league/1-102-160534.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-588685.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-matches/1-102-302288.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82-%ce%9f%ce%bc%ce%af%ce%bb%ce%bf%cf%85/1-102-885448.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-group-to-qualify/1-102-334783.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-%ce%9a%ce%bf%cf%81%cf%85%cf%86%ce%b1%ce%af%ce%bf%cf%82-%ce%a3%ce%ba%cf%8c%cf%81%ce%b5%cf%81/1-102-353588.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-group-straight-forecast/1-102-905127.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-group-dual-forecast/1-102-905515.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-%ce%a6%ce%b9%ce%bd%ce%b1%ce%bb%ce%af%cf%83%cf%84-%ce%b4%ce%b9%ce%bf%cf%81%ce%b3%ce%ac%ce%bd%cf%89%cf%83%ce%b7%cf%82/1-102-898335.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-%ce%9d%ce%b1-%cf%86%cf%84%ce%ac%cf%83%ce%b5%ce%b9-%cf%83%cf%84%ce%bf%ce%bd-%cf%84%ce%b5%ce%bb%ce%b9%ce%ba%cf%8c/1-102-898209.html
+Element name url: http://www.sportingbet.gr/sports-football/champions-league-201415-winning-nation/1-102-905509.html
+Element name url: http://www.sportingbet.gr/sports-football/europa-league-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-715397.html
+Element name url: http://www.sportingbet.gr/sports-football/europa-league-201415-matches/1-102-302289.html
+Element name url: http://www.sportingbet.gr/sports-football/europa-league-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82-%ce%9f%ce%bc%ce%af%ce%bb%ce%bf%cf%85/1-102-890288.html
+Element name url: http://www.sportingbet.gr/sports-football/europa-league-201415-group-to-qualify/1-102-890297.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-premier-league/1-102-386195.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-championship/1-102-851891.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-one/1-102-851967.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-two/1-102-851968.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-conference-national/1-102-160489.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%93%ce%b5%cf%81%ce%bc%ce%b1%ce%bd%ce%af%ce%b1-bundesliga/1-102-84042.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%93%ce%b5%cf%81%ce%bc%ce%b1%ce%bd%ce%af%ce%b1-2%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-84401.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%cf%85%cf%83%cf%84%cf%81%ce%af%ce%b1-erste-liga/1-102-735648.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%95%ce%bb%ce%b2%ce%b5%cf%84%ce%af%ce%b1-2%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-735654.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%83%cf%80%ce%b1%ce%bd%ce%af%ce%b1-primera-division/1-102-84041.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%83%cf%80%ce%b1%ce%bd%ce%af%ce%b1-segunda-division/1-102-84410.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%83%cf%80%ce%b1%ce%bd%ce%af%ce%b1-segunda-b/1-102-181839.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%93%ce%b1%ce%bb%ce%bb%ce%af%ce%b1-ligue-1/1-102-84044.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%93%ce%b1%ce%bb%ce%bb%ce%af%ce%b1-ligue-2/1-102-84399.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%84%ce%b1%ce%bb%ce%af%ce%b1-serie-a/1-102-84043.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%84%ce%b1%ce%bb%ce%af%ce%b1-serie-b/1-102-84407.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%84%ce%b1%ce%bb%ce%af%ce%b1-lega-pro/1-102-885768.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a4%ce%bf%cf%85%cf%81%ce%ba%ce%af%ce%b1-super-lig/1-102-160524.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a4%ce%bf%cf%85%cf%81%ce%ba%ce%af%ce%b1-2%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-160525.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a1%cf%89%cf%83%ce%af%ce%b1-premier-liga/1-102-469525.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9f%cf%85%ce%ba%cf%81%ce%b1%ce%bd%ce%af%ce%b1-premier-league/1-102-735609.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a0%ce%bf%ce%bb%cf%89%ce%bd%ce%af%ce%b1-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-735617.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%92%cf%81%ce%b1%ce%b6%ce%b9%ce%bb%ce%af%ce%b1-serie-a/1-102-190183.html
+Element name url: http://www.sportingbet.gr/sports-football/brazil-serie-c/1-102-190208.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%92%ce%ad%ce%bb%ce%b3%ce%b9%ce%bf-jupiler-pro-league/1-102-734620.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%92%ce%ad%ce%bb%ce%b3%ce%b9%ce%bf-2%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-734624.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9a%cf%81%ce%bf%ce%b1%cf%84%ce%af%ce%b1-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-84396.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%94%ce%b1%ce%bd%ce%af%ce%b1-superliga/1-102-735008.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9f%cf%85%ce%b3%ce%b3%ce%b1%cf%81%ce%af%ce%b1-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-735019.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%83%cf%81%ce%b1%ce%ae%ce%bb-premier-league/1-102-190429.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9f%ce%bb%ce%bb%ce%b1%ce%bd%ce%b4%ce%af%ce%b1-2%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-735131.html
+Element name url: http://www.sportingbet.gr/sports-football/norway-tippeligaen/1-102-734842.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9d%ce%bf%cf%81%ce%b2%ce%b7%ce%b3%ce%af%ce%b1-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-734843.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a0%ce%bf%cf%81%cf%84%ce%bf%ce%b3%ce%b1%ce%bb%ce%af%ce%b1-primeira-liga/1-102-735121.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a0%ce%bf%cf%81%cf%84%ce%bf%ce%b3%ce%b1%ce%bb%ce%af%ce%b1-%ce%9a%cf%8d%cf%80%ce%b5%ce%bb%ce%bb%ce%bf/1-102-735124.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a3%ce%ba%cf%89%cf%84%ce%af%ce%b1-league-two/1-102-734652.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a3%ce%ba%cf%89%cf%84%ce%af%ce%b1-championship/1-102-734647.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a3%ce%bf%cf%85%ce%b7%ce%b4%ce%af%ce%b1-allsvenskan-%ce%a3%ce%bf%cf%85%ce%b7%ce%b4%ce%af%ce%b1/1-102-734851.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a3%ce%bf%cf%85%ce%b7%ce%b4%ce%af%ce%b1-superettan-%ce%a3%ce%bf%cf%85%ce%b7%ce%b4%ce%af%ce%b1/1-102-734852.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a1%ce%bf%cf%85%ce%bc%ce%b1%ce%bd%ce%af%ce%b1-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-736566.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%cf%81%ce%b3%ce%b5%ce%bd%cf%84%ce%b9%ce%bd%ce%ae-primera-division/1-102-84391.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%cf%81%ce%b3%ce%b5%ce%bd%cf%84%ce%b9%ce%bd%ce%ae-primera-b-nacional/1-102-171815.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%92%ce%bf%ce%bb%ce%b9%ce%b2%ce%af%ce%b1-lpf/1-102-204767.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a7%ce%b9%ce%bb%ce%ae-primera-division/1-102-84394.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a7%ce%b9%ce%bb%ce%ae-primera-b/1-102-209131.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9a%ce%bf%ce%bb%ce%bf%ce%bc%ce%b2%ce%af%ce%b1-primera-a/1-102-121360.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9a%ce%bf%ce%bb%ce%bf%ce%bc%ce%b2%ce%af%ce%b1-primera-b/1-102-293075.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9a%cf%8c%cf%83%cf%84%ce%b1-%ce%a1%ce%af%ce%ba%ce%b1-primera-division/1-102-172260.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%95%ce%ba%ce%bf%cf%85%ce%b1%ce%b4%cf%8c%cf%81-serie-a/1-102-94907.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%93%ce%bf%cf%85%ce%b1%cf%84%ce%b5%ce%bc%ce%ac%ce%bb%ce%b1-liga-nacional/1-102-166399.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9f%ce%bd%ce%b4%ce%bf%cf%8d%cf%81%ce%b1-liga-nacional/1-102-171816.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9c%ce%b5%ce%be%ce%b9%ce%ba%cf%8c-primera-division/1-102-84408.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a0%ce%b1%cf%81%ce%b1%ce%b3%ce%bf%cf%85%ce%ac%ce%b7-division-profesional/1-102-204550.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a0%ce%b5%cf%81%ce%bf%cf%8d-primera-division/1-102-90216.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9f%cf%85%cf%81%ce%bf%cf%85%ce%b3%ce%bf%cf%85%ce%ac%ce%b7-primera-division/1-102-94913.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%97%ce%a0%ce%91-mls/1-102-734122.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%92%ce%b5%ce%bd%ce%b5%ce%b6%ce%bf%cf%85%ce%ad%ce%bb%ce%b1-primera-division/1-102-120424.html
+Element name url: http://www.sportingbet.gr/sports-football/canada-soccer-league/1-102-821927.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%cf%85%cf%83%cf%84%cf%81%ce%b1%ce%bb%ce%af%ce%b1-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-413289.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%cf%85%cf%83%cf%84%cf%81%ce%b1%ce%bb%ce%af%ce%b1-%ce%9a%cf%8d%cf%80%ce%b5%ce%bb%ce%bb%ce%bf/1-102-301544.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9c%ce%b1%cf%81%cf%8c%ce%ba%ce%bf-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1/1-102-190514.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a4%ce%b6%ce%b1%ce%bc%ce%ac%ce%b9%ce%ba%ce%b1-premier-league/1-102-737214.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%af%ce%b3%cf%85%cf%80%cf%84%ce%bf%cf%82-premier-league/1-102-191365.html
+Element name url: http://www.sportingbet.gr/sports-football/uefa-champions-league-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735174.html
+Element name url: http://www.sportingbet.gr/sports-football/afc-champions-league-2014-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-891972.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%92%cf%81%ce%b1%ce%b6%ce%b9%ce%bb%ce%af%ce%b1-copa-do-brazil-2014-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-891910.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%9a%cf%8d%cf%80%cf%81%ce%bf%cf%82-1%ce%b7-%ce%9a%ce%b1%cf%84%ce%b7%ce%b3%ce%bf%cf%81%ce%af%ce%b1-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-892673.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-premier-league-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735176.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-premier-league-201415-%ce%9a%ce%bf%cf%81%cf%85%cf%86%ce%b1%ce%af%ce%b5%cf%82-4/1-102-780162.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-premier-league-201415-%ce%9a%ce%bf%cf%81%cf%85%cf%86%ce%b1%ce%af%ce%bf%cf%82-%ce%a3%ce%ba%cf%8c%cf%81%ce%b5%cf%81/1-102-782980.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-premier-league-201415-%ce%a5%cf%80%ce%bf%ce%b2%ce%b9%ce%b2%ce%b1%cf%83%ce%bc%cf%8c%cf%82/1-102-780171.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-%ce%9a%cf%8d%cf%80%ce%b5%ce%bb%ce%bb%ce%bf-fa-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735234.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-championship-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735245.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-championship-201415-%ce%91%ce%bd%ce%bf%ce%b4%ce%bf%cf%82/1-102-780167.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-championship-201415-%ce%a5%cf%80%ce%bf%ce%b2%ce%b9%ce%b2%ce%b1%cf%83%ce%bc%cf%8c%cf%82/1-102-780172.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-one-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735251.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-one-201415-%ce%91%ce%bd%ce%bf%ce%b4%ce%bf%cf%82/1-102-780169.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-two-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735255.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-two-201415-%ce%91%ce%bd%ce%bf%ce%b4%ce%bf%cf%82/1-102-780170.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-two-201415-%ce%a5%cf%80%ce%bf%ce%b2%ce%b9%ce%b2%ce%b1%cf%83%ce%bc%cf%8c%cf%82/1-102-780174.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%91%ce%b3%ce%b3%ce%bb%ce%af%ce%b1-league-cup-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-849080.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%93%ce%b5%cf%81%ce%bc%ce%b1%ce%bd%ce%af%ce%b1-%ce%9a%cf%8d%cf%80%ce%b5%ce%bb%ce%bb%ce%bf-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735185.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%84%ce%b1%ce%bb%ce%af%ce%b1-%ce%9a%cf%8d%cf%80%ce%b5%ce%bb%ce%bb%ce%bf-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735211.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a0%ce%bf%cf%81%cf%84%ce%bf%ce%b3%ce%b1%ce%bb%ce%af%ce%b1-primeira-liga-201314-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735186.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%a3%ce%ba%cf%89%cf%84%ce%af%ce%b1-premiership-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-909767.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%99%cf%83%cf%80%ce%b1%ce%bd%ce%af%ce%b1-%ce%9a%cf%8d%cf%80%ce%b5%ce%bb%ce%bb%ce%bf-201415-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82/1-102-735197.html
+Element name url: http://www.sportingbet.gr/sports-football/uefa-euro-2016-winner/1-102-766208.html
+Element name url: http://www.sportingbet.gr/sports-football/uefa-euro-2016-to-qualify/1-102-766212.html
+Element name url: http://www.sportingbet.gr/sports-football/uefa-euro-2016-not-to-qualify/1-102-766213.html
+Element name url: http://www.sportingbet.gr/sports-football/uefa-euro-2016-qualifying-%ce%9d%ce%b9%ce%ba%ce%b7%cf%84%ce%ae%cf%82-%ce%9f%ce%bc%ce%af%ce%bb%ce%bf%cf%85/1-102-766209.html
+Searching events into: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae/1-102-574583.html
+name
+0
+Element name name: Μιόνταλεν v Nest Sotra
+Element name name: Γκορνικ Ζάμπρζε v Βίσλα Κρακοβίας
+Element name name: Σάντνες v Σόγκνταλ
+Element name name: Σιντ Τρούιντεν v WS Βρυξέλλες
+Element name name: Akhisar Belediye v Κασίμπασα
+Element name name: Μπάρι v Αβελίνο
+Element name name: Μπεσίκτας v Σίβασπορ
+Element name name: Σπόρτινγκ Λόκερεν v Κλαμπ Μπριζ
+Element name name: Οντ Μπάλκλουμπ v Μπόντο Γκλιμτ
+Element name name: Στάμπαεκ v Βίκινγκ
+Element name name: Λεγανες v Ρεάλ Μπέτις
+Element name name: Oesters IF v ΓΚΑΪΣ
+Element name name: Γκιόρι ΕΤΟ v Ουίπεστ
+Element name name: Μέταλουργκ Ντόνετσκ v Ζόρια
+Element name name: Ντνίπρο v Τσερνομόρετς
+Element name name: Ελ Νασιονάλ v Μπαρτσελόνα SC
+Element name name: Πούμας v Πατσούκα
+Element name name: Κοπεγχάγη v Ράντερς
+Element name name: Σλάβεν v Χάιντουκ Σπλιτ
+Element name name: Λας Πάλμας v Νουμάνθια
+Element name name: Ελτσε v Σεβίλλη
+Element name name: Μπεϊτάρ Ιερουσαλήμ v Ασχντόντ
+Element name name: Ενππι v El Raja Marsa Matruh
+Element name name: ΠΑΟΚ v Ατρόμητος
+Element name name: Φιγκεϊρένσε v Κοριτίμπα
+Element name name: Ροζάριο Σεντράλ v Νιούελς Ολντ Μπόις
+Element name name: Ιντερνασιονάλ v Κορίνθιανς
+Element name name: Παλμέιρας v Σάντος
+Element name name: Ρόζενμποργκ v Vaalerenga
+Element name name: Ατλέτικο Παραναένσε v Φλαμένγκο
+Element name name: Γκενκ v KVC Westerlo
+Element name name: Στεάουα Βουκουρεστίου v Ουνιβερσιτατέα Κλουζ
+Element name name: Σαντιάγκο Μόρνινγκ v Ντεπ. Ταμούκο
+Element name name: Lota Schwager v Curico Unido
+Element name name: Ιντερ v Νάπολι
+Element name name: Ράσινγκ Κλουμπ v Βέλεζ Σάρσφιλντ
+Element name name: Βιγιαρεάλ v Αλμερία
+Element name name: Νιου Γιόρκ Ρεντ Μπουλς v Κολόμπους
+Element name name: Λυών v Μονπελιέ
+Element name name: Νασιονάλ v Ρεντίστας
+Element name name: Μπόκα Ούνιδος v Φέρρο Καρίλ Εστε
+Element name name: Expreso Rojo v Bucaramanga
+Element name name: Ντεπορτίβο Λάρα v Ντεπορτίβο Πετάρε
+Element name name: Cucuta v CD Jaguares
+Element name name: Ινστιτούτο v Σαν Μαρτίν Σαν Χουάν
+Element name name: Aguilas Doradas v Chico FC
+Element name name: Ολίμπια v Λουκένο
+Element name name: Βιτόρια v Κρουζέιρο
+Element name name: Μποταφόγκο v Σπορτ Ρεσίφε
+Element name name: Ουνιόν Εσπανόλα v Κομπρελόα
+Element name name: Ρίβερ Πλέιτ v Μπελγκράνο
+Element name name: Caracas v Tucanes FC
+Element name name: Ατλέτικο Τζούνιορ v Ατλέτικο Νασιονάλ
+Element name name: Zamora FC v Deportivo Anzoategui
+Element name name: Ντεπορτίβο Καλι v Μιλονάριος
+Element name name: Λιμπερτάδ v Τζένεραλ Ντίας
+url
+0
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549353.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549248.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549341.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549185.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3539685.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549061.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3539693.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3539439.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549343.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549340.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549117.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549357.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549230.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549178.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549176.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3567534.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549250.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549272.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3567868.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549150.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3524497.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3567686.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3567323.html
+Element name url: http://www.sportingbet.gr/sports-%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%cf%83%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1/5-3549082.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a6%ce%b9%ce%b3%ce%ba%ce%b5%cf%8a%cf%81%ce%ad%ce%bd%cf%83%ce%b5-v-%ce%9a%ce%bf%cf%81%ce%b9%cf%84%ce%af%ce%bc%cf%80%ce%b1/2-102-574583-3549325.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a1%ce%bf%ce%b6%ce%ac%cf%81%ce%b9%ce%bf-%ce%a3%ce%b5%ce%bd%cf%84%cf%81%ce%ac%ce%bb-v-%ce%9d%ce%b9%ce%bf%cf%8d%ce%b5%ce%bb%cf%82-%ce%9f%ce%bb%ce%bd%cf%84-%ce%9c%cf%80%cf%8c%ce%b9%cf%82/2-102-574583-3549281.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%99%ce%bd%cf%84%ce%b5%cf%81%ce%bd%ce%b1%cf%83%ce%b9%ce%bf%ce%bd%ce%ac%ce%bb-v-%ce%9a%ce%bf%cf%81%ce%af%ce%bd%ce%b8%ce%b9%ce%b1%ce%bd%cf%82/2-102-574583-3549326.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a0%ce%b1%ce%bb%ce%bc%ce%ad%ce%b9%cf%81%ce%b1%cf%82-v-%ce%a3%ce%ac%ce%bd%cf%84%ce%bf%cf%82/2-102-574583-3549329.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a1%cf%8c%ce%b6%ce%b5%ce%bd%ce%bc%cf%80%ce%bf%cf%81%ce%b3%ce%ba-v-vaalerenga/2-102-574583-3549342.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%91%cf%84%ce%bb%ce%ad%cf%84%ce%b9%ce%ba%ce%bf-%ce%a0%ce%b1%cf%81%ce%b1%ce%bd%ce%b1%ce%ad%ce%bd%cf%83%ce%b5-v-%ce%a6%ce%bb%ce%b1%ce%bc%ce%ad%ce%bd%ce%b3%ce%ba%ce%bf/2-102-574583-3549328.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%93%ce%ba%ce%b5%ce%bd%ce%ba-v-kvc-westerlo/2-102-574583-3539441.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a3%cf%84%ce%b5%ce%ac%ce%bf%cf%85%ce%b1-%ce%92%ce%bf%cf%85%ce%ba%ce%bf%cf%85%cf%81%ce%b5%cf%83%cf%84%ce%af%ce%bf%cf%85-v-%ce%9f%cf%85%ce%bd%ce%b9%ce%b2%ce%b5%cf%81%cf%83%ce%b9%cf%84%ce%b1%cf%84%ce%ad%ce%b1-%ce%9a%ce%bb%ce%bf%cf%85%ce%b6/2-102-574583-3549167.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a3%ce%b1%ce%bd%cf%84%ce%b9%ce%ac%ce%b3%ce%ba%ce%bf-%ce%9c%cf%8c%cf%81%ce%bd%ce%b9%ce%bd%ce%b3%ce%ba-v-%ce%9d%cf%84%ce%b5%cf%80-%ce%a4%ce%b1%ce%bc%ce%bf%cf%8d%ce%ba%ce%bf/2-102-574583-3567715.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-lota-schwager-v-curico-unido/2-102-574583-3567716.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%99%ce%bd%cf%84%ce%b5%cf%81-v-%ce%9d%ce%ac%cf%80%ce%bf%ce%bb%ce%b9/2-102-574583-3513779.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a1%ce%ac%cf%83%ce%b9%ce%bd%ce%b3%ce%ba-%ce%9a%ce%bb%ce%bf%cf%85%ce%bc%cf%80-v-%ce%92%ce%ad%ce%bb%ce%b5%ce%b6-%ce%a3%ce%ac%cf%81%cf%83%cf%86%ce%b9%ce%bb%ce%bd%cf%84/2-102-574583-3549275.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%92%ce%b9%ce%b3%ce%b9%ce%b1%cf%81%ce%b5%ce%ac%ce%bb-v-%ce%91%ce%bb%ce%bc%ce%b5%cf%81%ce%af%ce%b1/2-102-574583-3524499.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9d%ce%b9%ce%bf%cf%85-%ce%93%ce%b9%cf%8c%cf%81%ce%ba-%ce%a1%ce%b5%ce%bd%cf%84-%ce%9c%cf%80%ce%bf%cf%85%ce%bb%cf%82-v-%ce%9a%ce%bf%ce%bb%cf%8c%ce%bc%cf%80%ce%bf%cf%85%cf%82/2-102-574583-3549003.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9b%cf%85%cf%8e%ce%bd-v-%ce%9c%ce%bf%ce%bd%cf%80%ce%b5%ce%bb%ce%b9%ce%ad/2-102-574583-3551127.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9d%ce%b1%cf%83%ce%b9%ce%bf%ce%bd%ce%ac%ce%bb-v-%ce%a1%ce%b5%ce%bd%cf%84%ce%af%cf%83%cf%84%ce%b1%cf%82/2-102-574583-3572163.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9c%cf%80%cf%8c%ce%ba%ce%b1-%ce%9f%cf%8d%ce%bd%ce%b9%ce%b4%ce%bf%cf%82-v-%ce%a6%ce%ad%cf%81%cf%81%ce%bf-%ce%9a%ce%b1%cf%81%ce%af%ce%bb-%ce%95%cf%83%cf%84%ce%b5/2-102-574583-3572776.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-expreso-rojo-v-bucaramanga/2-102-574583-3567746.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9d%cf%84%ce%b5%cf%80%ce%bf%cf%81%cf%84%ce%af%ce%b2%ce%bf-%ce%9b%ce%ac%cf%81%ce%b1-v-%ce%9d%cf%84%ce%b5%cf%80%ce%bf%cf%81%cf%84%ce%af%ce%b2%ce%bf-%ce%a0%ce%b5%cf%84%ce%ac%cf%81%ce%b5/2-102-574583-3567840.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-cucuta-v-cd-jaguares/2-102-574583-3567745.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%99%ce%bd%cf%83%cf%84%ce%b9%cf%84%ce%bf%cf%8d%cf%84%ce%bf-v-%ce%a3%ce%b1%ce%bd-%ce%9c%ce%b1%cf%81%cf%84%ce%af%ce%bd-%ce%a3%ce%b1%ce%bd-%ce%a7%ce%bf%cf%85%ce%ac%ce%bd/2-102-574583-3572777.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-aguilas-doradas-v-chico-fc/2-102-574583-3567808.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9f%ce%bb%ce%af%ce%bc%cf%80%ce%b9%ce%b1-v-%ce%9b%ce%bf%cf%85%ce%ba%ce%ad%ce%bd%ce%bf/2-102-574583-3567681.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%92%ce%b9%cf%84%cf%8c%cf%81%ce%b9%ce%b1-v-%ce%9a%cf%81%ce%bf%cf%85%ce%b6%ce%ad%ce%b9%cf%81%ce%bf/2-102-574583-3549327.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9c%cf%80%ce%bf%cf%84%ce%b1%cf%86%cf%8c%ce%b3%ce%ba%ce%bf-v-%ce%a3%cf%80%ce%bf%cf%81%cf%84-%ce%a1%ce%b5%cf%83%ce%af%cf%86%ce%b5/2-102-574583-3549330.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9f%cf%85%ce%bd%ce%b9%cf%8c%ce%bd-%ce%95%cf%83%cf%80%ce%b1%ce%bd%cf%8c%ce%bb%ce%b1-v-%ce%9a%ce%bf%ce%bc%cf%80%cf%81%ce%b5%ce%bb%cf%8c%ce%b1/2-102-574583-3567279.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%a1%ce%af%ce%b2%ce%b5%cf%81-%ce%a0%ce%bb%ce%ad%ce%b9%cf%84-v-%ce%9c%cf%80%ce%b5%ce%bb%ce%b3%ce%ba%cf%81%ce%ac%ce%bd%ce%bf/2-102-574583-3549282.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-caracas-v-tucanes-fc/2-102-574583-3567843.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%91%cf%84%ce%bb%ce%ad%cf%84%ce%b9%ce%ba%ce%bf-%ce%a4%ce%b6%ce%bf%cf%8d%ce%bd%ce%b9%ce%bf%cf%81-v-%ce%91%cf%84%ce%bb%ce%ad%cf%84%ce%b9%ce%ba%ce%bf-%ce%9d%ce%b1%cf%83%ce%b9%ce%bf%ce%bd%ce%ac%ce%bb/2-102-574583-3567807.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-zamora-fc-v-deportivo-anzoategui/2-102-574583-3567837.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9d%cf%84%ce%b5%cf%80%ce%bf%cf%81%cf%84%ce%af%ce%b2%ce%bf-%ce%9a%ce%b1%ce%bb%ce%b9-v-%ce%9c%ce%b9%ce%bb%ce%bf%ce%bd%ce%ac%cf%81%ce%b9%ce%bf%cf%82/2-102-574583-3567809.html
+Element name url: http://www.sportingbet.gr/sports-football/%ce%96%cf%89%ce%bd%cf%84%ce%b1%ce%bd%cf%8c-%ce%a3%cf%84%ce%bf%ce%af%cf%87%ce%b7%ce%bc%ce%b1-%ce%91%ce%b3%cf%8e%ce%bd%ce%b5%cf%82-%ce%9a%cf%85%cf%81%ce%b9%ce%b1%ce%ba%ce%ae-%ce%9b%ce%b9%ce%bc%cf%80%ce%b5%cf%81%cf%84%ce%ac%ce%b4-v-%ce%a4%ce%b6%ce%ad%ce%bd%ce%b5%cf%81%ce%b1%ce%bb-%ce%9d%cf%84%ce%af%ce%b1%cf%82/2-102-574583-3567682.html
+time
+0
+name
+0
+url
+</system-out>
+    <system-err>Oct 19, 2014 8:33:50 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: executable: /home/thanos/source/SportsBookScraper/phantomJS/phantomjs-1.9.7-linux-x86_64/bin/phantomjs
+Oct 19, 2014 8:33:50 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: port: 27568
+Oct 19, 2014 8:33:50 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: arguments: [--webdriver=27568, --webdriver-logfile=/home/thanos/source/SportsBookScraper/phantomjsdriver.log]
+Oct 19, 2014 8:33:50 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: environment: {}
+PhantomJS is launching GhostDriver...
+[INFO  - 2014-10-19T17:33:50.771Z] GhostDriver - Main - running on port 27568
+[INFO  - 2014-10-19T17:33:51.345Z] Session [173bd8e0-57b6-11e4-8f1d-d5fa5426c1a3] - page.settings - {&quot;XSSAuditingEnabled&quot;:false,&quot;javascriptCanCloseWindows&quot;:true,&quot;javascriptCanOpenWindows&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;loadImages&quot;:true,&quot;localToRemoteUrlAccessEnabled&quot;:false,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34&quot;,&quot;webSecurityEnabled&quot;:true}
+[INFO  - 2014-10-19T17:33:51.345Z] Session [173bd8e0-57b6-11e4-8f1d-d5fa5426c1a3] - page.customHeaders:  - {}
+[INFO  - 2014-10-19T17:33:51.345Z] Session [173bd8e0-57b6-11e4-8f1d-d5fa5426c1a3] - Session.negotiatedCapabilities - {&quot;browserName&quot;:&quot;phantomjs&quot;,&quot;version&quot;:&quot;1.9.7&quot;,&quot;driverName&quot;:&quot;ghostdriver&quot;,&quot;driverVersion&quot;:&quot;1.1.0&quot;,&quot;platform&quot;:&quot;linux-unknown-64bit&quot;,&quot;javascriptEnabled&quot;:true,&quot;takesScreenshot&quot;:false,&quot;handlesAlerts&quot;:false,&quot;databaseEnabled&quot;:false,&quot;locationContextEnabled&quot;:false,&quot;applicationCacheEnabled&quot;:false,&quot;browserConnectionEnabled&quot;:false,&quot;cssSelectorsEnabled&quot;:true,&quot;webStorageEnabled&quot;:false,&quot;rotatable&quot;:false,&quot;acceptSslCerts&quot;:false,&quot;nativeEvents&quot;:true,&quot;proxy&quot;:{&quot;proxyType&quot;:&quot;direct&quot;}}
+[INFO  - 2014-10-19T17:33:51.345Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 173bd8e0-57b6-11e4-8f1d-d5fa5426c1a3
+</system-err>
+  </testcase>
+</testsuite>

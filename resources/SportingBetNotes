@@ -1,0 +1,27 @@
+
+Xpaths
+Event classes
+# Because of hidden instance of elements we need to inject jquery to get the text names
+//div[@id='megaMenu']/div[@id='sportsCatsMore']/a
+
+Event Types
+//div[@class='eventClasses']/div[@id='events']/div[@class='box']/div[@class='dd']/a
+
+Events
+--Football and all the other similar formating events
+
+#name:text and url:href
+//div[contains(@id, 'e_')]/div[@class='columns']/div[@class='eventInfo']/div[@class='eventName']/a
+# start time:text
+//div[contains(@id, 'e_')]/div[@class='columns']/div[@class='eventInfo']/div[@class='eventName']/span 
+
+-- Horse event or special case events. Not linked, this is an extra idepedent element
+-- Special cases defined as cases where type is similar with the event and market is part of event's name
+-- in that case all selection are displayed
+
+#name:text, url doesn't exist all the selections are displayed
+//div[contains(@id, 'evHeader_')]/h2 
+
+
+MarketSelections
+//div[contains(@id, 's_')]/div[@id='isOffered']/a[contains(@class,'price')]/span[contains(@class,'UK')]
