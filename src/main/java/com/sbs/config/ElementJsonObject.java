@@ -26,6 +26,12 @@ public class ElementJsonObject {
 	 */
 	private Map<String,List<String>> xpathMap     = null;
 	private Map<String,List<String>> attributeMap = null;
+
+	/*
+	 * Only for xpathInDepth flag is used for the parent xpath
+	 */
+	 private String parentXpath = null;
+ 
 	/*
 	 * Keeping json components
 	 */
@@ -37,7 +43,7 @@ public class ElementJsonObject {
 
 	private ElementJsonObject() {}
 
-	protected ElementJsonObject (JSONObject element) {
+	protected ElementJsonObject (JSONObject element, boolean xpathInDepth) {
 
 		this.elements = new ArrayList<JSONObject>();
 		this.elements.add(element);
@@ -48,6 +54,15 @@ public class ElementJsonObject {
 			//TODO add logs
 			System.out.println(className + " Object mapping failure");
 			JSONCfgError.add(className + " object mapping failure");
+			return;
+		}
+
+		// If xpathInDepth option has been provided then extra handling need to be done on xpathMap and attributeMap as well.
+		boolean mappingOK = mapAttributeListsForXpathInDepth(xpathInDepth);
+		if(!mappingOK) {
+			//TODO add logs
+			System.out.println(className + " Object mapping failure, reason: " + JSONCfgError.getLastError());
+			JSONCfgError.add(className + " Object mapping failure");
 		}
 	}
 
@@ -58,10 +73,12 @@ public class ElementJsonObject {
 
 		for (int i = 0; i < elements.size(); i++) {
 			boolean mappingOK = mapElementProperties(elements.get(i));
+			
 			if(!mappingOK) {
 				//TODO add logs
 				System.out.println(className + " Object mapping failure, reason: " + JSONCfgError.getLastError());
 				JSONCfgError.add(className + " Object mapping failure");
+				return;
 			}
 		}
 	}
@@ -84,6 +101,8 @@ public class ElementJsonObject {
 
 		// Map the xpathMap and the attributeMap base on attribute property names
 		String xpath = element.getString("xpath");
+		//In case of xpathInDepth flag this xpath above will be the unique parent xpath
+		parentXpath = xpath;
 		JSONObject attributes = element.getJSONObject("attributes");
 
 		String[] attrPropertyNames  = JSONObject.getNames(attributes);
@@ -139,6 +158,7 @@ public class ElementJsonObject {
 			List<String> xpathLst = null;
 			List<String> attrLst =  null;
 			if (attributeMap.get(key) != null) {
+				//TODO add logs
 				System.out.println("Warning the " + key + " has already been added, Append element into the list.");
 				xpathLst = xpathMap.get(key);
 				attrLst  = attributeMap.get(key);
@@ -159,6 +179,40 @@ public class ElementJsonObject {
 			attrLst.add(attributes.getString(key));
 			attributeMap.put(keyTrimmed,attrLst);
 		}
+		return true;
+	}
+
+	/*
+	 * This method will get object attributes xpathMap and attributeMap and will split based on '--' special character
+	 * all the xpaths from attribute key value and will keep only the attribute name into the attributeMap
+	 * 
+	 * Before: attributeMap://div/span/a--href 
+	 * After:  xpathMap: //div/span/a, attributeMap: href
+	 *
+	 */
+	private boolean mapAttributeListsForXpathInDepth(boolean xpathInDepth) {
+		if(!xpathInDepth) {
+			return true;
+		}
+
+		// Get the attributes one by one for both attributeMap and xpathMap have the same Keys
+		for(String key : attributeMap.keySet()) {
+			List<String> newAttrLst  = new ArrayList<String>();
+			List<String> newXpathLst = new ArrayList<String>();
+			for (String attributeVal : attributeMap.get(key)) {
+				String[] attrSplitted = attributeVal.split("--");
+				if(attrSplitted.length != 2) {
+					System.out.println(className + " ERROR array length is invalid please check your configuration.");
+					JSONCfgError.add(className + " ERROR array length is invalid please check your configuration.");
+					return false;
+				}
+				newXpathLst.add(attrSplitted[0]);
+				newAttrLst.add(attrSplitted[1]);
+			}
+			xpathMap.put(key,newXpathLst);
+			attributeMap.put(key,newAttrLst);
+		}
+
 		return true;
 	}
 
@@ -228,5 +282,12 @@ public class ElementJsonObject {
 			return null;
 		}
 		return attributeMap.keySet();
+	}
+
+	/*
+	 * In case of xpathInDepth is enabled then parent will be available
+	 */
+	public String getParentXpath() {
+		return parentXpath;
 	}
 }

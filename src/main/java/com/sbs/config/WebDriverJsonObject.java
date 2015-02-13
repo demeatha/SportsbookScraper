@@ -15,6 +15,8 @@ public class WebDriverJsonObject {
 	private String name = null;
 	private String url = null;
 	private EventHierarchyJsonObject hierarchy = null;
+	private SportsbookLoginJsonObject login = null;
+	private SportsbookBetslipJsonObject bslip = null;
 	private static Map<String,WebDriverJsonObject> drivers = null;
 	private static final String className = WebDriverJsonObject.class.getName();
 	
@@ -90,30 +92,52 @@ public class WebDriverJsonObject {
 				return false;
 			}
 			url = jsonDriver.getString("url");
+
+			// Create the event hierarchy object
 			hierarchy = jsonDriver.getJSONObject("EventHierarchy");
+			this.hierarchy = new EventHierarchyJsonObject(hierarchy); 
+
+			if (JSONCfgError.hasErrors()) {
+				//TODO add logs
+				System.out.println("Failed to load hierarchy configuration, reason: " + JSONCfgError.getLastError());
+				JSONCfgError.add("Failed to load hiercrchy configuration");
+				return false;
+			}
+
+			// Login object isn't mandatory configuration element
+			JSONObject loginObject = jsonDriver.optJSONObject("Login");
+			if(loginObject != null) {
+				this.login = new SportsbookLoginJsonObject(loginObject);
+				if(JSONCfgError.hasErrors()) {
+					System.out.println("ERROR: Something wrong happened during initialization of login module, reason: " + JSONCfgError.getLastError());
+					JSONCfgError.add("ERROR: Something wrong happened during initialization of login module");
+					return false;
+				}
+			}
+
+			// Its not mandatory to have the Betslip object into your configuration
+			JSONObject betslipObject = jsonDriver.optJSONObject("Betslip");
+			if(betslipObject != null) {
+				this.bslip = new SportsbookBetslipJsonObject(betslipObject);
+				if(JSONCfgError.hasErrors()) {
+					System.out.println("ERROR: Something wrong happened during initialization of betslip module, reason: " + JSONCfgError.getLastError());
+					JSONCfgError.add("ERROR: Something wrong happened during initialization of betslip module");
+					return false;
+				}
+			}
 		} catch (JSONException e) {
 			//TODO add logs
 			System.out.println("Failed to load JSONObject, reason: " + e.toString());
 			JSONCfgError.add("Failed to load JSONObject, reason: " + e.toString());
 			return false;
 		}
-		
-
-		this.hierarchy = new EventHierarchyJsonObject(hierarchy); 
-		if (JSONCfgError.hasErrors()) {
-			//TODO add logs
-			System.out.println("Failed to load hierarchy configuration, reason: " + JSONCfgError.getLastError());
-			JSONCfgError.add("Failed to load hiercrchy configuration");
-			return false;
-		}
-
 		return true;
 	}
 
 	/*
 	 * Validation method for Drivers mandatory properties
 	 */
-	private boolean validPropertiesForDriver (JSONObject driver) {
+	private boolean validPropertiesForDriver(JSONObject driver) {
 		if (!driver.has("url")) {
 			//TODO add logs
 			System.out.println("WebDriverJsonObject property url not found");
@@ -138,11 +162,19 @@ public class WebDriverJsonObject {
 		return drivers.get(name);
 	}
 
-	public EventHierarchyJsonObject hierarchy () {
+	public EventHierarchyJsonObject hierarchy() {
 		return hierarchy;
 	}
 
-	public String url () {
+	public String url() {
 		return this.url;
+	}
+
+	public SportsbookLoginJsonObject login() {
+		return login;
+	}
+
+	public SportsbookBetslipJsonObject betslip() {
+		return bslip;
 	}
 }

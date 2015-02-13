@@ -6,9 +6,10 @@ import org.json.JSONObject;
  * The main class that keeps all Event hierarchy specific levels
  */
 public class EventHierarchyJsonObject {
-	private EvClassJsonObject evClass = null;
-	private EvTypeJsonObject  evType  = null;
-	private EventJsonObject   event   = null;
+	private EvClassJsonObject evClass                     = null;
+	private EvTypeJsonObject  evType                      = null;
+	private EventJsonObject   event                       = null;
+	private EvMarketSelectionJsonObject evMarketSelection = null;
 	private final static String className = EventHierarchyJsonObject.class.getName();
 
 	private EventHierarchyJsonObject () {}
@@ -25,6 +26,7 @@ public class EventHierarchyJsonObject {
 		evClass = new EvClassJsonObject(evHierObj.getJSONObject("EvClass"));
 		evType = new EvTypeJsonObject(evHierObj.getJSONObject("EvType"));
 		event  = new EventJsonObject(evHierObj.getJSONObject("Event"));
+		evMarketSelection = new EvMarketSelectionJsonObject(evHierObj.getJSONObject("EvMarketSelection"));
 	}
 
 
@@ -51,6 +53,13 @@ public class EventHierarchyJsonObject {
 			return false;
 		}
 
+		if (!evHierObj.has("EvMarketSelection")) {
+			// TODO add logs
+			System.out.println(className + " property with name EvMarketSelection not found");
+			JSONCfgError.add(className + " property with name EvMarketSelection not found");
+			return false;
+		}
+
 		return true;
 	}
 
@@ -65,5 +74,9 @@ public class EventHierarchyJsonObject {
 
 	public EventJsonObject levelScopeEvent() {
 		return event;
+	}
+
+	public EvMarketSelectionJsonObject levelScopeMarketSelection() {
+		return evMarketSelection;
 	}
 }

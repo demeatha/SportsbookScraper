@@ -15,6 +15,7 @@ public class EvHierarchyLevel {
 	private JSONObject hierLevelObj           = null;
 	private List<ElementJsonObject> elements  = null;
 	private static final String className     = EvHierarchyLevel.class.getName();
+	private boolean xpathInDepth              = false;
 
 	protected EvHierarchyLevel () {}
 	
@@ -34,11 +35,20 @@ public class EvHierarchyLevel {
 
 		try {
 
-			  JSONArray elementsArray = hierLevelObj.getJSONArray("Elements");
+			  JSONArray elementsArray  = hierLevelObj.getJSONArray("Elements");
 			  JSONArray linkedElements = hierLevelObj.optJSONArray("linkedElements");
+			  
+			  // Set the xpathInDepth flag to true if is set
+			  xpathInDepth = hierLevelObj.optBoolean("xpathInDepth",false);
 
 			  // Check if there are linked elements that need to be handled as one
 			  if (linkedElements != null) {
+				  if (xpathInDepth) {
+					  //TODO add logs
+					  System.out.println(className + " elements fail to link, reason: xpathInDepth attribute can't co-exist with linkedElements");
+					  JSONCfgError.add(className + " elements fail to link, reason: xpathInDepth attribute can't co-exist with linkedElements" );
+					  return;
+				  }
 				  boolean elementsListOk = storeLinkedElements(linkedElements, elementsArray);
 				  if (!elementsListOk) {
 					  System.out.println(className + " elements fail to link, reason: "+ JSONCfgError.getLastError());
@@ -47,9 +57,9 @@ public class EvHierarchyLevel {
 				  }
 			  }
 
-			  // Parse the rest of the elements
+			  // Parse and store the rest of the elements
 			  for (int i = 0; i < elementsArray.length(); i++) {
-				  ElementJsonObject element = new ElementJsonObject(elementsArray.getJSONObject(i));
+				  ElementJsonObject element = new ElementJsonObject(elementsArray.getJSONObject(i), xpathInDepth);
 				  if (JSONCfgError.hasErrors()) {
 					  System.out.println(className + " object initialisation failure for Element, reason: " + JSONCfgError.getLastError());
 					  JSONCfgError.add(className + " object initialisation failure for Element");
@@ -69,7 +79,7 @@ public class EvHierarchyLevel {
 	 *
 	 * @param elementIndex the index that item is located in elements list
 	 */
-	public ElementJsonObject getElement (int elementIndex) {
+	public ElementJsonObject getElement(int elementIndex) {
 		if(elementIndex >= elements.size() || elementIndex < 0) {
 			System.out.println(className + "Index " + elementIndex+ " out of bounds, list size is: "+ elements.size());
 			JSONCfgError.add(className + "Index " + elementIndex+ " out of bounds, list size is: "+ elements.size());
@@ -81,8 +91,15 @@ public class EvHierarchyLevel {
 	/*
 	 * Returns elements list
 	 */
-	public List<ElementJsonObject> elementsList () {
+	public List<ElementJsonObject> elementsList() {
 		return elements;
+	}
+
+	/*
+	 * Return the xpathInDepth flag
+	 */
+	public boolean isXpathInDepthEnabled() {
+		return xpathInDepth;
 	}
 
 	/*

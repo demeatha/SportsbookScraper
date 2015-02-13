@@ -1,0 +1,76 @@
+{
+  Drivers: {
+      SportingBetDriver: {
+        url: "https://www.sportingbet.gr/stoixima.aspx",
+        EventHierarchy: {
+          EvClass: {
+            Elements: [
+              {
+                xpath:"//div[@id='megaMenu']/div[@id='sportsCatsMore']/a", 
+                attributes:{url:"href",name:"text"}
+              }
+            ]
+          },
+          EvType: {
+            Elements: [
+              {
+                xpath:"//div[@class='eventClasses']/div[@id='events']/div[@class='box']/div[@class='dd']/a", 
+                attributes:{url:"href",name:"text"}
+              }
+            ]
+          },
+          Event: {
+            Elements: [
+              {
+                xpath:"//div[contains(@id, 'e_')]/div[@class='columns']/div[@class='eventInfo']/div[@class='eventName']/a", 
+                attributes:{url:"href",name:"text"}
+              },
+              {
+                xpath:"//div[contains(@id, 'evHeader_')]/h2",
+                attributes: {name:"text"}
+              }
+            ]
+          },
+          EvMarketSelection: {
+            xpathInDepth:true,
+            Elements: [
+              {
+                xpath:"//ul[@id='markets1']/li/ul[@class='markets-list']/li[contains(@class, 'm_item')]", 
+                attributes:{
+                    marketName:".//span[contains(@class,'headerSub')]--text",
+                    selectionNameRow:".//*[contains(@class, 'description')]--text",
+                    selectionNameCol:".//div[@class='m_header']/div[contains(@class,'results')]/div[@class='odds']--text",
+                    selectionGroup:".//div[@class='couponEvents']/div[contains(@id, 'm_e_')]/div[contains(@id, 'mb_e_')]/div[contains(@class, 'columns')]--innerHTML",
+                    selectionPrice:".//div[contains(@id, 's_')]/div[@id='isOffered']/a[contains(@class,'price')]/span[contains(@class,'EU')]--text",
+                    selectionButton:".//div[contains(@id, 's_')]--id",
+                    selectionHandicap:".//div[contains(@id, 's_')]/div[@id='isOffered']/span[contains(@class,'handicap')]--text"
+                }
+              }
+            ]
+          }
+        },
+        Login: {
+          xpaths:{
+            login:"//form[@id='accountBarLogin']/a",
+            username:"//input[@id='modCustLoginIFrameUsername']",
+            password:"//input[@id='modCustLoginIFramePassword']",
+            button:"//a[@id='loginButton']",
+            proofOfLogin: "//div[@id='B_welcomeUser']/span[@id='modCustLoginUserId']"
+          },
+          credentials : {
+            username: "test",
+            password:"1234556"
+          }
+        },
+        Betslip: {
+          selectionDescription: [
+            "//li[contains(@class,'basketItem')]/ul[contains(@class,'itemDescription')]/li/ul/li/span[contains(@class,'eventName')]",
+            "//li[contains(@class,'basketItem')]/ul[contains(@class,'itemDescription')]/li/ul/li/span[contains(@class,'price')]/span[contains(@class,'value')]",
+            "//li[contains(@class,'basketItem')]/ul[contains(@class,'itemDescription')]/li/span[contains(@class,'marketName')]"
+          ],
+          amountField: "//div[contains(@class,'amount')]/input[contains(@id,'amount-')]",
+          placeBetButton:"//ul[contains(@class,'buttons')]/li/input[contains(@class,'buy')]"
+        }
+      }
+    }
+}
